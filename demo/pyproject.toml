@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "netzun-django-creando-apis"
+version = "0.1.0"
+description = "Repositorio del curso Creando APIs con Django - Nivel Avanzado"
+authors = ["Carlo Alva <carlo.alva@pucp.pe>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.2"
+djangorestframework = "^3.16.0"
+djangorestframework-simplejwt = "^5.5.0"
+django-oauth-toolkit = "^3.0.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 
