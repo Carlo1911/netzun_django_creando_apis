@@ -22,30 +22,35 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 4. Ingresa al código del proyecto
 ```bash
-cd demo
+cd application
 ```
 
-5. Activa el entorno virtual:
+5. Crea el .env en base al .env_template
+```bash
+cp .env_template .env
+```
+
+6. Activa el entorno virtual:
 ```bash
 poetry env activate
 ```
 
-6. Instala las dependencias del proyecto:
+7. Instala las dependencias del proyecto:
 ```bash
 poetry install --no-root
 ```
 
-7. Realiza las migraciones:
+8. Realiza las migraciones:
 ```bash
 python manage.py migrate
 ```
 
-8. Crea un superusuario (para usar el admin de Django):
+9. Crea un superusuario (para usar el admin de Django):
 ```bash
 python manage.py createsuperuser
 ```
 
-9. Ejecuta el servidor de desarrollo:
+10. Ejecuta el servidor de desarrollo:
 ```bash
 python manage.py runserver
 ```
