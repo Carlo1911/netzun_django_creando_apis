@@ -60,6 +60,6 @@ El servidor estará disponible en `http://127.0.0.1:8000/`
 
 ## Tecnologías Utilizadas
 - Django 5.2
-- Django REST Framework
+- Django-Ninja
 - JWT Authentication
 - OAuth2 Toolkit
